@@ -28,6 +28,8 @@
         ./examples.py "[API Key]"
 """
 
+# API KEY: fwMMyDgDHPhyaeIdsRlMKuQsxpThDvDig36aj8nyP__HXAoevMQ8yKbqONUxwIPS67VMihDpGCidiBMmocYL0dEVyttvKbIaxZbx1uGRu1tBrgAxluY5U6iq-jYkZnYx
+
 from yelpapi import YelpAPI
 import argparse
 from pprint import pprint
@@ -49,10 +51,10 @@ with YelpAPI(args.api_key) as yelp_api:
 
         Search API: https://www.yelp.com/developers/documentation/v3/business_search
     """
-    print("ICE CREAM RECOMMENDATIONS")
-    response = yelp_api.search_query(term='ice cream', location='los angeles, ca', sort_by='rating', limit=5)
-    pprint(response)
-    print('\n-------------------------------------------------------------------------\n')
+    # print("ICE CREAM RECOMMENDATIONS")
+    # response = yelp_api.search_query(term='ice cream', location='los angeles, ca', sort_by='rating', limit=)
+    # pprint(response)
+    # print('\n-------------------------------------------------------------------------\n')
 
-    response = yelp_api.search_query(term='ice cream', location='los angeles, ca', sort_by='rating', limit=5)
-    save_response_to_json(response, 'ice_cream_shops.json')
+    response = yelp_api.search_query(term='restaurants', location='los angeles, ca', sort_by='distance', limit=20)
+    save_response_to_json(response, 'recommendations.json')
