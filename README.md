@@ -2,6 +2,6 @@
 This is a project for LAHacks 2024
 
 Group Members:
-Vincent O
-Abhishek Kakolla
-Andres Aguilar
+Vincent O\n
+Abhishek Kakolla\n
+Andres Aguilar\n
